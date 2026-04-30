@@ -1,0 +1,24 @@
+services:
+  memoria-cernusco:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: memoria-cernusco
+    ports:
+      - "8090:8090"
+    restart: unless-stopped
+    depends_on:
+      - content-api
+    volumes:
+      # Opzionale: monta il file HTML per sviluppo live (rimuovere in produzione)
+      - ./memoria-cernusco.html:/usr/share/nginx/html/index.html:ro
+
+  content-api:
+    image: php:8.2-cli-alpine
+    container_name: memoria-cernusco-api
+    working_dir: /app
+    command: php -S 0.0.0.0:9000 -t /app/backend /app/backend/router.php
+    restart: unless-stopped
+    volumes:
+      - ./backend:/app/backend:ro
+      - ./data:/app/data
