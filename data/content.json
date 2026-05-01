@@ -24,6 +24,10 @@
                     "text": "Memoria Rinnovabile",
                     "url": "https://memoriarinnovabile.org"
                 }
+            ],
+            "answers": [
+                "Risposta da completare.",
+                "Risposta da completare."
             ]
         },
         {
@@ -43,6 +47,10 @@
                     "text": "Archivio e fonti locali",
                     "url": ""
                 }
+            ],
+            "answers": [
+                "Risposta da completare.",
+                "Risposta da completare."
             ]
         },
         {
@@ -62,6 +70,10 @@
                     "text": "Memoria Rinnovabile",
                     "url": "https://memoriarinnovabile.org"
                 }
+            ],
+            "answers": [
+                "Risposta da completare.",
+                "Risposta da completare."
             ]
         },
         {
@@ -78,7 +90,13 @@
                 "perché nel 1946?",
                 "Di che cosa parla il documento?"
             ],
-            "references": []
+            "references": [],
+            "answers": [
+                "Risposta da completare.",
+                "Risposta da completare.",
+                "Risposta da completare.",
+                "Risposta da completare."
+            ]
         }
     ]
 }
